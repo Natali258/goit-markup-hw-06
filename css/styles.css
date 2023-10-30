@@ -30,7 +30,7 @@ img {
 }
 
 .container {
-  min-width: 100%;
+  min-width: 320px;
   max-width: 428px;
   margin: 0 auto;
   padding: 0 16px;
@@ -259,10 +259,11 @@ body {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
-
+@media only screen and (min-width: 1158px) {
 .menu li .menu-page:hover,
 .menu li .menu-page:focus {
     color: var(--color-change);
+}
 }
 
 
@@ -300,16 +301,26 @@ body {
 }
 .contact-info-mt {
     color: var(--text-address);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
-.contact-info-mt:active {
+
+.contact-info-mt.current {
     color: var(--color-change);
     font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
 }
 
 @media only screen and (min-width: 768px) {
     .contact-info-mt {
         font-family: Roboto;
         font-size: 12px;
+        font-weight: 400;
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: var(--text-address);
