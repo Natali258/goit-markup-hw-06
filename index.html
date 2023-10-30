@@ -26,21 +26,79 @@
           <a href="./index.html" class="logo link"
             >Web<span class="logo-studio">Studio</span></a
           >
-          <ul class="menu list">
-            <li class="menu-li">
-              <a href="./index.html" class="menu-page link current">Studio</a>
-            </li>
-            <li class="menu-li">
-              <a href="./portfolio.html" class="menu-page link">Portfolio</a>
-            </li>
-            <li class="menu-li">
-              <a href="" class="menu-page link">Contacts</a>
-            </li>
-          </ul>
+          <div class="mobile-page js-menu-container">
+            <div class="menu-btn-mobile-close js-close-menu">
+              <svg class="menu-btn-mobile-icon-close" width="8" height="8">
+                <use href="./images/icons.svg#icon-x-close"></use>
+              </svg>
+            </div>
+            <ul class="menu list">
+              <li class="menu-li">
+                <a href="./index.html" class="menu-page link current">Studio</a>
+              </li>
+              <li class="menu-li">
+                <a href="./portfolio.html" class="menu-page link">Portfolio</a>
+              </li>
+              <li class="menu-li">
+                <a href="" class="menu-page link">Contacts</a>
+              </li>
+            </ul>
+            <address class="contact">
+              <ul class="contact-info list">
+                <li class="contact-info-li">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="contact-info-mt link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+110001111111" class="contact-info-mt link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="social-ftr-list list">
+              <li class="social-ftr-li">
+                <a href="" class="social-ftr-link">
+                  <svg class="social-ftr-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-ftr-li">
+                <a href="" class="social-ftr-link">
+                  <svg class="social-ftr-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-ftr-li">
+                <a href="" class="social-ftr-link">
+                  <svg class="social-ftr-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-ftr-li">
+                <a href="" class="social-ftr-link">
+                  <svg class="social-ftr-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-btn-mobile js-open-menu">
+            <svg class="menu-btn-mobile-icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-header-menu"></use>
+            </svg>
+          </div>
         </nav>
         <address class="contact">
           <ul class="contact-info list">
-            <li>
+            <li class="contact-info-li">
               <a href="mailto:info@devstudio.com" class="contact-info-mt link"
                 >info@devstudio.com</a
               >
@@ -149,7 +207,16 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-cards list">
             <li class="team-cards-company">
-              <img src="./images/teamfoto_pd.jpg" alt="man" width="264" />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/mobile-img/team-pd-mob.jpg    1x,
+                    ./images/mobile-img/team-pd-mob@2x.jpg 2x
+                  "
+                />
+                <img src="./images/teamfoto_pd.jpg" alt="man" width="264" />
+              </picture>
               <div class="team-cards-company-text">
                 <h3 class="team-name">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -186,7 +253,16 @@
               </div>
             </li>
             <li class="team-cards-company">
-              <img src="./images/teamfoto_fd.jpg" alt="man" width="264" />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/mobile-img/team-fd-mob.jpg    1x,
+                    ./images/mobile-img/team-fd-mob@2x.jpg 2x
+                  "
+                />
+                <img src="./images/teamfoto_fd.jpg" alt="man" width="264" />
+              </picture>
               <div class="team-cards-company-text">
                 <h3 class="team-name">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -223,7 +299,16 @@
               </div>
             </li>
             <li class="team-cards-company">
-              <img src="./images/teamfoto_mk.jpg" alt="woman" width="264" />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/mobile-img/team-mk-mob.jpg    1x,
+                    ./images/mobile-img/team-mk-mob@2x.jpg 2x
+                  "
+                />
+                <img src="./images/teamfoto_mk.jpg" alt="woman" width="264" />
+              </picture>
               <div class="team-cards-company-text">
                 <h3 class="team-name">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -260,7 +345,16 @@
               </div>
             </li>
             <li class="team-cards-company">
-              <img src="./images/teamfoto_uid.jpg" alt="man" width="264" />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/mobile-img/team-uid-mob.jpg    1x,
+                    ./images/mobile-img/team-uid-mob@2x.jpg 2x
+                  "
+                />
+                <img src="./images/teamfoto_uid.jpg" alt="man" width="264" />
+              </picture>
               <div class="team-cards-company-text">
                 <h3 class="team-name">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -509,6 +603,96 @@
         </form>
       </div>
     </div>
+
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" type="button">
+        <svg class="menu-toggle-icon" width="28" height="28">
+          <use href="./images/icons.svg#icon-x-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link current" href="">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li class="mobile-contatcs-item">
+          <a class="mobile-contacts-link active" href="tel:+110001111111">
+            +11 (000) 111-11-11
+          </a>
+        </li>
+        <li class="mobile-contatcs-item">
+          <a class="mobile-contacts-link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials socials">
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div> -->
+
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
